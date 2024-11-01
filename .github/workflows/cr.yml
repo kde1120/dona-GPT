@@ -12,10 +12,6 @@ jobs:
   run_code_review:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
       - name: Run GPT-4 Code Review
         uses: anc95/ChatGPT-CodeReview@main
         env:
